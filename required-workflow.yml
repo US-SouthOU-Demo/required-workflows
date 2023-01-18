@@ -9,5 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - run: |
-        echo "This is a required workflow" >> $GITHUB_STEP_SUMMARY
+      - shell: bash
+        run: echo "This is a required workflow" >> $GITHUB_STEP_SUMMARY
+        
