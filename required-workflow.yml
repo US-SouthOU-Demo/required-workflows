@@ -10,4 +10,4 @@ jobs:
     
     steps:
       - run: |
-        echo This is a required workflow >> $GITHUB_STEP_SUMMARY
+        echo "This is a required workflow" >> $GITHUB_STEP_SUMMARY
