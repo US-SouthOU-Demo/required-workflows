@@ -1,0 +1,13 @@
+name: Sample Required Workflow
+
+on: 
+  pull_request:
+    branches: [main]
+
+jobs:
+  validation:
+    runs-on: ubuntu-latest
+    
+    steps:
+      run: |
+        echo This is a required workflow >> $GITHUB_STEP_SUMMARY
